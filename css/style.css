@@ -8,17 +8,17 @@
 
   h1 {
     color: rgb(247, 243, 244);
-    text-shadow: 0 0 5px rgb(216, 95, 135);
+    text-shadow: 0 0 5px rgb(216, 168, 95);
   }
 
   h5 {
     color: rgb(245, 241, 242);
-    text-shadow: 0 0 5px rgb(216, 95, 135);
+    text-shadow: 0 0 5px rgb(216, 168, 95);
   }
 
   p {
     color: rgb(247, 241, 243);
-    text-shadow: 0 0 5px rgb(216, 95, 135);
+    text-shadow: 0 0 5px rgb(216, 168, 95);
   }
   
     
@@ -68,6 +68,22 @@ header::before {
 .right h1,
 .right p {
     margin: 5px 0; /* Adjust the margin as needed */
+}
+
+.right button {
+    background-color: rgb(216, 168, 95);
+    
+    box-shadow: 0 0 5px rgb(247, 241, 243) ;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right button:hover {
+    background-color: #a09a45;
 }
 
   /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
