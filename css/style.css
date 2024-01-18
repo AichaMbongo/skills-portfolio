@@ -52,6 +52,36 @@ header::before {
     background-color: rgba(68, 60, 19, 0.2); /* Adjust the alpha value for transparency */
 }
 
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent; /* Adjust the background color as needed */
+    position: fixed;  /* Position the navbar fixed to the top */
+    top: 0;  /* Set the top position to 0 */
+    width: 100%;  /* Ensure it spans the entire width of the page */
+    z-index: 100;  /* Ensure the navbar stays above other content */
+    margin-left: -25%;
+    
+  }
+.navbar li {
+    display: inline;
+    
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Adjust the hover background color as needed */
+    color: black;
+}
 .right {
     /* background-color: rgba(229, 229, 229, 0.7); */
     float: left;
