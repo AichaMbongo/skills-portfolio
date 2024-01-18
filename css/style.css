@@ -4,7 +4,11 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-  }
+    background-image: url('../img/backg.webp');
+    background-attachment: fixed;
+    background-size: cover; /* Adjust as needed */
+    margin: 0; /* Remove default margin to ensure full coverage */
+}
 
   h1 {
     color: rgb(247, 243, 244);
