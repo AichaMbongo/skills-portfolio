@@ -25,7 +25,7 @@
     
   /* Style the header */
   header {
-    padding: 50vh;
+    padding: 49vh;
     /* text-align: center;
     font-size: 35px;
     color: white; */
@@ -62,6 +62,8 @@ header::before {
     /* box-shadow: 0 0 3px rgb(216, 95, 135); */
     position: relative;
     z-index: 2; /* Set a higher z-index to place it above the overlay */
+    /* box-shadow: 0 0 3px rgb(216, 95, 135); */
+    transform-origin: center; /* Zoom from the center */
 }
 
 .right h5,
@@ -86,7 +88,114 @@ header::before {
     background-color: #a09a45;
 }
 
-  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+
+.glow {
+    animation: glowing 2s infinite; /* Adjust the duration as needed */
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 215, 0, 0.7); /* Gold glow color */
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.9); /* Increase the glow */
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 215, 0, 0.7); /* Back to the original glow */
+    }
+}
+
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.slide-in {
+    animation: slideInFromLeft 1s ease-out forwards; /* Adjust the duration as needed */
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Move to the original position */
+    }
+}
+
+
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    /* background-image: linear-gradient(to top, #86377b 20%, #27273c 80%); */
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
   @media (max-width: 600px) {
     section, .right  {
       -webkit-flex-direction: column;
