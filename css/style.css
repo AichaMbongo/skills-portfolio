@@ -236,7 +236,7 @@ header::before {
 
 
 
-.section1 {
+.section-design {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -249,14 +249,14 @@ header::before {
     margin: 2%;
 }
 
-.section1 .image-container img {
+.section-design .image-container img {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     top: 0;
 }
 
-.section1 .text-container {
+.section-design .text-container {
     min-width: 70%;
     margin-left: 5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -265,12 +265,12 @@ header::before {
 }
 
 /* Additional styling for better visual presentation */
-.section1 h2 {
+.section-design h2 {
     font-size: 24px;
     color: white;
 }
 
-.section1 p {
+.section-design p {
     font-size: 16px;
     color: white;
 }
