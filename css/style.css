@@ -60,18 +60,19 @@ header::before {
 
 .navbar {
     list-style-type: none;
-    padding: 0;
+    padding: 10;
     margin: 0;
     background-color: transparent; /* Adjust the background color as needed */
     position: fixed;  /* Position the navbar fixed to the top */
     top: 0;  /* Set the top position to 0 */
     width: 100%;  /* Ensure it spans the entire width of the page */
     z-index: 100;  /* Ensure the navbar stays above other content */
-    margin-left: -25%;
+    /* margin-left: -25%; */
+    float: left;
     
   }
 .navbar li {
-    display: inline;
+    display: inline; 
     
 }
 
@@ -235,51 +236,45 @@ header::before {
 
 
 
-.image-text-section {
+.section1 {
     display: flex;
-    justify-content: space-around; /* Adjust as needed */
+    justify-content: space-around;
     align-items: center;
-    padding: 50px; /* Adjust the padding as needed */
+    padding: 50px;
     background-color: #5c41275d;
-        background-image: url('../img/black2.jpg');
-        background-attachment: fixed;
-        background-size: cover; /* Adjust as needed */
-    
-
-    border-radius: 8px; /* Add rounded corners to the image */
+    background-image: url('../img/black2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 8px;
     margin: 2%;
-
 }
 
-.image-container img {
+.section1 .image-container img {
     width: 100%;
-    border-radius: 8px; /* Add rounded corners to the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-    top:0;
-   
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
 }
 
-
-.text-container {
-    max-width: 100%; /* Adjust the maximum width of the text container as needed */
+.section1 .text-container {
+    min-width: 70%;
     margin-left: 5%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
-    background-color: #5c41275d;
-    ;
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #313130e5;
+    padding: 2%;
 }
 
 /* Additional styling for better visual presentation */
-.image-text-section h2 {
+.section1 h2 {
     font-size: 24px;
-    color: #333; /* Adjust the text color as needed */
-}
-
-.image-text-section p {
-    font-size: 16px;
-    color: #383636; /* Adjust the text color as needed */
     color: white;
 }
+
+.section1 p {
+    font-size: 16px;
+    color: white;
+}
+
 
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
