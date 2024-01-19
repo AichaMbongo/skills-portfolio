@@ -19,8 +19,13 @@
     color: rgb(245, 241, 242);
     text-shadow: 0 0 5px rgb(216, 168, 95);
   }
+  h3 {
+    color: rgb(245, 241, 242);
+    text-align: center;
+    text-decoration: underline;
+  }
 
-  p {
+  .header p {
     color: rgb(247, 241, 243);
     text-shadow: 0 0 5px rgb(216, 168, 95);
   }
@@ -226,6 +231,54 @@ header::before {
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
+}
+
+
+
+.image-text-section {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+    padding: 50px; /* Adjust the padding as needed */
+    background-color: #5c41275d;
+        background-image: url('../img/black2.jpg');
+        background-attachment: fixed;
+        background-size: cover; /* Adjust as needed */
+    
+
+    border-radius: 8px; /* Add rounded corners to the image */
+    margin: 2%;
+
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px; /* Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    top:0;
+   
+}
+
+
+.text-container {
+    max-width: 100%; /* Adjust the maximum width of the text container as needed */
+    margin-left: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    background-color: #5c41275d;
+    ;
+    
+}
+
+/* Additional styling for better visual presentation */
+.image-text-section h2 {
+    font-size: 24px;
+    color: #333; /* Adjust the text color as needed */
+}
+
+.image-text-section p {
+    font-size: 16px;
+    color: #383636; /* Adjust the text color as needed */
+    color: white;
 }
 
 
