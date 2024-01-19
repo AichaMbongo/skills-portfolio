@@ -16,7 +16,7 @@
 <ul class="navbar">
     <li><a class="active glow" href="#home">Home</a></li>
     <li><a class=" glow" href="#about">About</a></li>
-    <li><a class=" glow" href="#contact">Projects</a></li>
+    <li><a class=" glow" href="#projects">Projects</a></li>
     <li><a class=" glow" href="#about">Skills</a></li>
     <li><a class=" glow" href="#about">Contact</a></li>
   </ul>
@@ -48,9 +48,9 @@
     </header>
     
 
-    <section class="section-design" id="about">
-        <div class="image-container">
-            <img src="img/on-laptop.jpg" alt="Image Description">
+    <section class="section-design" id="about" style="display: flex;">
+        <div class="image-container" >
+            <img src="img/on-laptop.jpg" alt="Image Description" >
         </div>
         <div class="text-container glow">
             <h3>About Me</h3>
@@ -78,6 +78,128 @@
 
 
     <section class="section-design" id="projects">
+        <div class="title-container">
+            <h3 class="glow">My Projects</h3>
+
+        </div>
+
+        <div class="responsive1">
+            <div class="gallery1">
+              <a target="_blank" href="img/CVDetect.png">
+                <img src="img/CVDetect.png" alt="Cinque Terre" width="600" height="400" >
+              </a>
+              <div class="desc1">
+                    <p>
+                       
+
+                        Developed a Cardiovascular Disease Prediction System, 
+                        leveraging Python, Django, and machine learning algorithms for enhanced diagnostic 
+                        accuracy. As the project lead and developer, successfully integrated diverse technologies
+                         into a user-friendly web platform, enabling healthcare professionals to predict and 
+                         manage cardiovascular diseases officiently.
+                        </br>
+                        <a href="https://github.com/AichaMbongo/134141.git" target="_blank">View project on GitHub</a>  
+                                      </p>
+                </div>
+            </div>
+          </div>
+
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img/SUAttachment.png">
+        <img src="img/SUAttachment.png" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">
+        <p class="card-text">
+            I spearheaded a project to enhance Strathmore's student attachment portal.
+            <span id="dots-1">...</span>
+            <span id="more-1" style="display: none;">
+              I played a pivotal role in defining the system requirements and implementing improvements.
+              Utilizing the Trello project management tool, I efficiently mapped out the entire project trajectory.
+            </span>
+            <a id="readMoreBtn-1" onclick="toggleText(1)" class="text-primary">Read More</a> </br>
+            <a href="https://trello.com/b/N3XfIbUK/su-attachment-project" target="_blank">Click to View Trello Board</a>
+
+          </p>
+
+      </div>
+    </div>
+</div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img/FreshFields.png">
+        <img src="img/FreshFields.png" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">
+        <p >
+            Fresh Fields marked one of my initial projects, serving as an ecommerce 
+            <span id="dots-3">...</span>
+            <span id="more-3" style="display: none;">
+              platform designed specifically for rural farmers. Developed using PHP and HTML, the web platform utilized a MariaDB (SQL database) to meet its objectives.
+            </span>
+            <a id="readMoreBtn-3" onclick="toggleText(3)" class="text-primary">Read More</a></br>
+            <a href="https://drive.google.com/file/d/14eX_GrhM7tnbB3_j7OT9YTUp59wZbzAO/view?pli=1" target="_blank">Click to View project Demo</a>
+          </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img/advert.png">
+        <img src="img/advert.png" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">
+        <p  >
+            I conducted an eMarketing initiative for "Just For You Studio," a salon based in the Strathmore 
+            <span id="dots-4">...</span>
+            <span id="more-4" style="display: none;">
+              University student center. The project focused on enhancing visibility, driving sales, and fostering customer retention.
+              My responsibilities included designing a website prototype and creating salon advertisements using multimedia tools like
+              Adobe, Canva, and CapCut.
+            </span>
+            <a id="readMoreBtn-4" onclick="toggleText(4)" class="text-primary">Read More</a> </br>
+            <a href="https://youtu.be/hcVOaD_S39c" target="_blank">Click to Watch Advert</a>
+
+          </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img/Rpubs.png">
+        <img src="img/Rpubs.png" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">
+        <p >
+            I led a Data science project, focusing on exploratory data analysis, 
+            <span id="dots-2">...</span>
+            <span id="more-2" style="display: none;">
+              preprocessing, model training, and hyper-parameter tuning.
+              The project involved loading datasets, performing statistical analysis, creating visualizations,
+              and applying various data transformations. Additionally, I trained and evaluated multiple models,
+              conducted hyper-parameter tuning using a "Random Search," and implemented ensemble methods like Bagged CART.
+              The final consolidation included the development of a Plumber API and PHP output for effective model deployment.
+            </span>
+            <a id="readMoreBtn-2" onclick="toggleText(2)" class="text-primary">Read More</a> </br>
+            <a href="https://rpubs.com/aicha/1121209" target="_blank">Click to View project on Rpubs</a>
+
+          </p>
+    </div>
+    </div>
+  </div>
+  
+  <div class="clearfix"></div>
+  
+  <!-- <div style="padding:6px;">
+    <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+    <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+  </div> -->
+  
 
     </section>
 

@@ -237,16 +237,29 @@ header::before {
 
 
 .section-design {
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     align-items: center;
     padding: 50px;
     background-color: #5c41275d;
-    background-image: url('../img/black2.jpg');
+    background-image: url('../img/brick.jpg');
     background-attachment: fixed;
     background-size: cover;
     border-radius: 8px;
     margin: 2%;
+}
+
+.section-design::before {
+    content: '';
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 90%;
+    margin: 2%;
+    background-color: rgba(68, 60, 19, 0.2); /* Adjust the alpha value for transparency */
+    border-radius: 8px; /* Assuming you want the overlay to have rounded corners like the container */
+    z-index: -1; /* Place the overlay behind the content */
 }
 
 .section-design .image-container img {
@@ -276,8 +289,14 @@ header::before {
 }
 
 
+
+
 div.gallery {
-    border: 1px solid #ccc;
+    background-color: #313130e5;
+    box-shadow: 0 0 8px rgb(17, 17, 17) ;
+ 
+
+
   }
   
   div.gallery:hover {
@@ -287,16 +306,64 @@ div.gallery {
   div.gallery img {
     width: 100%;
     height: auto;
+
   }
   
   div.desc {
     padding: 15px;
     text-align: center;
+    background-color: #313130e5;
+
   }
-  
+
   * {
     box-sizing: border-box;
+    
   }
+
+
+  .responsive1 {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order, placing the image on the left and text on the right */
+    padding: 20px;
+  }
+  
+  .gallery1 {
+    flex: 1; /* Make the gallery take up the available space */
+  }
+  
+  div.gallery1 img {
+    width: 30%;
+    height: auto;
+    display: flex;
+    float: left;
+    box-shadow: 0 0 8px rgb(17, 17, 17) ;
+    margin-right: 5%;
+
+
+  }
+
+  div.desc1 {
+    width: 100%; /* Set the width of the text container */
+    box-shadow: 0 0 8px rgb(17, 17, 17) ;
+    height: auto;
+    background-color: #313130e5;
+    padding: 30px; /* Add padding for better visual separation */
+
+
+
+  }
+  
+  .text-container1 {
+    padding: 20px; /* Add padding for better visual separation */
+        background-color: #313130e5;
+
+  }
+  
+  .card-text1 {
+    /* Add any additional styling for the text as needed */
+  }
+  
   
   .responsive {
     padding: 0 6px;
@@ -322,7 +389,6 @@ div.gallery {
     display: table;
     clear: both;
   }
-
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
   @media (max-width: 600px) {
     section, .right  {
