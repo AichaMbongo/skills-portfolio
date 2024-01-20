@@ -265,14 +265,15 @@ header::before {
 .section-design .image-container img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgb(247, 241, 243) ;
+
     top: 0;
 }
 
 .section-design .text-container {
     min-width: 70%;
     margin-left: 5%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px rgb(247, 241, 243) ;
     background-color: #313130e5;
     padding: 2%;
 }
@@ -294,6 +295,8 @@ header::before {
 div.gallery {
     background-color: #313130e5;
     box-shadow: 0 0 8px rgb(17, 17, 17) ;
+    box-shadow: 0 0 5px rgb(247, 241, 243) ;
+
  
 
 
@@ -306,6 +309,8 @@ div.gallery {
   div.gallery img {
     width: 100%;
     height: auto;
+    box-shadow: 0 0 5px rgb(247, 241, 243) ;
+
 
   }
   
@@ -337,7 +342,7 @@ div.gallery {
     height: auto;
     display: flex;
     float: left;
-    box-shadow: 0 0 8px rgb(17, 17, 17) ;
+    box-shadow: 0 0 5px rgb(247, 241, 243) ;
     margin-right: 5%;
 
 
@@ -345,7 +350,7 @@ div.gallery {
 
   div.desc1 {
     width: 100%; /* Set the width of the text container */
-    box-shadow: 0 0 8px rgb(17, 17, 17) ;
+    box-shadow: 0 0 5px rgb(247, 241, 243) ;
     height: auto;
     background-color: #313130e5;
     padding: 30px; /* Add padding for better visual separation */
@@ -413,18 +418,44 @@ row {
   padding: 10px;
   border-radius: 8px;
   margin-bottom: 20px;
+  background-color: #292828;
+  box-shadow: 0 0 5px rgb(247, 241, 243) ;
+
+
+
 }
 
+.icon-and-text {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  
+}
 .progress {
   height: 20px;
   margin-top: 10px;
   border-radius: 4px;
   overflow: hidden;
+  color: antiquewhite;
+  text-align: center;
+  box-shadow: 0 0 5px rgb(166, 185, 71) ;
+
+
 }
 
 .progress-bar {
   height: 100%;
-  background-color: #a09a45;
+  background-color: #5aa045;
+  box-shadow: 0 0 5px rgb(166, 185, 71) ;
+
+
+}
+
+.skill-icon {
+  display: inline;
+  width: 20%; /* Adjust the width as needed */
+  
+  border-radius: 10%;
+  margin-left: 5%; /* Add spacing between the icon and the text */
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
