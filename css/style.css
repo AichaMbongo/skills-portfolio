@@ -389,6 +389,44 @@ div.gallery {
     display: table;
     clear: both;
   }
+
+
+/* skills section */
+row {
+  margin-bottom: 1rem;
+}
+
+
+
+
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-column {
+  width: 30%; /* Adjust the width as needed */
+}
+
+.skill {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #a09a45;
+}
+
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
   @media (max-width: 600px) {
     section, .right  {
