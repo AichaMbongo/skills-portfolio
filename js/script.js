@@ -1,3 +1,6 @@
+
+
+
 function toggleText(cardId) {
     var dots = document.getElementById("dots-" + cardId);
     var moreText = document.getElementById("more-" + cardId);
@@ -49,3 +52,5 @@ window.onscroll = function () {
 
   // Attach the 'openCV' function to the click event of the CV button
   document.getElementById('cvButton').addEventListener('click', openCV);
+
+
