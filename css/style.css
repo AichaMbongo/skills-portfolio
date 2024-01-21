@@ -30,7 +30,16 @@
     text-shadow: 0 0 5px rgb(216, 168, 95);
   }
   
-    
+  
+  /* Apply light blue color to all text within anchor tags */
+a {
+  color: lightblue;
+}
+
+/*  add a hover effect to make it interactive */
+a:hover {
+  color: darkblue;
+}
     
   /* Style the header */
   header {
@@ -135,6 +144,9 @@ header::before {
     background-color: #a09a45;
 }
 
+.text-primary {
+  color: #a09a45;
+}
 
 .glow {
     animation: glowing 2s infinite; /* Adjust the duration as needed */
