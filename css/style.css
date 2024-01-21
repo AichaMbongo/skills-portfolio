@@ -65,12 +65,19 @@ header::before {
     background-color: transparent; /* Adjust the background color as needed */
     position: fixed;  /* Position the navbar fixed to the top */
     top: 0;  /* Set the top position to 0 */
-    width: 100%;  /* Ensure it spans the entire width of the page */
+    width: auto;  /* Ensure it spans the entire width of the page */
     z-index: 100;  /* Ensure the navbar stays above other content */
     /* margin-left: -25%; */
     float: left;
     
   }
+
+/* Add a background color when scrolled */
+.navbar.scrolled {
+  background-color:#292828;
+}
+
+
 .navbar li {
     display: inline; 
     
