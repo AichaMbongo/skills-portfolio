@@ -8,7 +8,7 @@ This is my personal portfolio website that showcases my skills, and experience. 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Personal-Porfolio](#personal-Porfolio)
+- [Online Personal-Portfolio](#online-personal-Porfolio)
 
 ## Description
 
@@ -20,9 +20,7 @@ My portfolio website is designed to give visitors an insight into my skills, pro
 - Project Showcase: Display of my projects, including descriptions, screenshots, and links to live demos or repositories.
 - Skills and Expertise: Overview of my technical skills and areas of expertise.
 - Contact Me: Contact information and a form for visitors to get in touch.
-- Comments: Displays what people say about me
 - Responsive Design: The website is optimized to be viewed on various devices and screen sizes.
-- Language Toggle: A toggle button for switching between English and French language.
 
 ## Technologies Used
 
@@ -34,10 +32,10 @@ My portfolio website is designed to give visitors an insight into my skills, pro
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the repository: `git clone https://github.com/AichaMbongo/skills-portfolio.git`
 2. Navigate to the project directory: `cd skills-portfolio`
 3. Open the `index.html` file in your web browser.
 
-## Personal-Porfolio
+## Online Personal-Portfolio
 
 You can also visit my website at [ https://esdtv-skills-portfolio.netlify.app/ ].
