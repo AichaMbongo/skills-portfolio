@@ -46,7 +46,7 @@ window.onscroll = function () {
 
   function openCV() {
     // Replace 'path/to/your/cv.pdf' with the actual path to your PDF file
-    var pdfUrl = '../skills-portfolio/doc/AichaCV.pdf';
+    var pdfUrl = './doc/AichaCV.pdf';
     window.open(pdfUrl, '_blank');
   }
 
