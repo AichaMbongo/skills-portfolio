@@ -531,12 +531,32 @@ color: white;
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
   @media (max-width: 600px) {
-    section, .right  {
+    section {
       -webkit-flex-direction: column;
       flex-direction: column;
     }
 
     header{
-        padding: 50px; /* Adjust padding for smaller screens */
+        padding: 100%; /* Adjust padding for smaller screens */
+    }
+  }
+
+   /* Media query for responsiveness */
+   @media only screen and (max-width: 768px) {
+    .right {
+      text-align:justify;
+      min-width: 100%;
+      margin-left: -100px;
+      margin-top: 0;
+    }
+
+    .right h1,h5, p {
+      font-size: 0.5em; /* Adjust the font size as needed */
+    }
+
+    .cta-button {
+      display: block;
+      padding: 100%;
+      margin: 10px auto; /* Center the button */
     }
   }
