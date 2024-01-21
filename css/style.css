@@ -147,6 +147,19 @@ header::before {
     background-color: #a09a45;
 }
 
+#cvButton{
+  background-color: rgb(216, 168, 95);
+    
+  box-shadow: 0 0 5px rgb(247, 241, 243) ;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
 .text-primary {
   color: #a09a45;
 }

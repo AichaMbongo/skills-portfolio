@@ -39,3 +39,13 @@ window.onscroll = function () {
       });
     });
   });
+
+
+  function openCV() {
+    // Replace 'path/to/your/cv.pdf' with the actual path to your PDF file
+    var pdfUrl = '../skills-portfolio/doc/AichaCV.pdf';
+    window.open(pdfUrl, '_blank');
+  }
+
+  // Attach the 'openCV' function to the click event of the CV button
+  document.getElementById('cvButton').addEventListener('click', openCV);
