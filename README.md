@@ -38,4 +38,4 @@ To run this project locally, follow these steps:
 
 ## Online Personal-Portfolio
 
-You can also visit my website at [ https://esdtv-skills-portfolio.netlify.app/ ].
+You can also visit my website at [ https://aichambongo.github.io/skills-portfolio/ ].
